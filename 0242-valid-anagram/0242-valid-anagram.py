@@ -1,5 +1,13 @@
 class Solution(object):
     def isAnagram(self, s, t):
-        l1 = sorted(list(s))
-        l2 = sorted(list(t))
-        return l1 == l2
+        """
+        :type s: str
+        :type t: str
+        :rtype: bool
+        """
+        
+        return sorted(s) == sorted(t)
+
+        
+        
+        
