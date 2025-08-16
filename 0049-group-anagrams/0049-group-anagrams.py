@@ -1,15 +1,10 @@
-class Solution(object):
-    def groupAnagrams(self, strs):
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         final = {}
         for p in strs:
-            palavras = ''.join(sorted(p))
-            if palavras in final:
-                final[palavras].append(p)
+            words = ''.join(sorted(p))
+            if words in final:
+                final[words].append(p)
             else:
-                final[palavras] = [p]
-                    
+                final[words] = [p]
         return list(final.values())
-
-
-            
-            
