@@ -6,8 +6,4 @@ class Solution(object):
         :rtype: bool
         """
         
-        return sorted(s) == sorted(t)
-
-        
-        
-        
+        return set(s) == set(t)
